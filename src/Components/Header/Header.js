@@ -12,14 +12,14 @@ const Header = () => {
     
         <div>
 
-        <nav className="bg-gray-800 h-32 p-5 m-5 rounded font-sans ">
+        <nav className="bg-gray-800 px:h-44 p-5 m-5 rounded-xl font-sans">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex  h-16">
-            <img className='p-3 w-24 h-24' src={logo} alt="" />
-            <h1 className='text-3xl mt-4 pt-2 mr-5 pr-5 text-white '><b>Edu Quiz World</b></h1>
+            <img className=' pb-5 w-24 h-24' src={logo} alt="" />
+            <h1 className='text-3xl mt-2 pt-2 mr-5 pr-5 text-white '><b>Edu Quiz World</b></h1>
               <div className="flex items-end">
                 <div className="hidden md:block">
-                <div className="ml-10 flex items-right  space-x-4">
+                <div className="ml-10 mb-2 pt-2 flex items-right  space-x-4">
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/'>Home</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/topics'>Topics</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/statistics'>Statistics</Link>
@@ -101,8 +101,8 @@ const Header = () => {
             leaveTo="opacity-0 scale-95"
           >
             {(ref) => (
-              <div className="md:hidden  mt-2 mr-11 pr-11 bg-transparent-100" id="mobile-menu">
-                <div ref={ref} className="bg-black-100 h-full inline-flex -mt-11 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div className="md:hidden  mt-11 mr-11 pr-11" id="mobile-menu">
+                <div ref={ref} className=" bg-black h-full inline-flex -mt-11 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium" to='/'>Home</Link>
                 <Link className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium" to='/topics'>Topics</Link>
                 <Link className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium" to='/statistics'>Statistics</Link>
