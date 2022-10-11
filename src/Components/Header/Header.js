@@ -12,19 +12,20 @@ const Header = () => {
     
         <div>
 
-        <nav className="bg-gray-800 px:h-44 p-5 m-5 rounded-xl font-sans">
+        <nav className="bg-gray-800 px:h-44 p-11 m-5 rounded-xl font-sans">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex  h-16">
-            <img className=' pb-5 w-24 h-24' src={logo} alt="" />
+            <div className="flex  h-28">
+            <img className=' pb-2 w-28 h-28' src={logo} alt="" />
             <h1 className='text-3xl mt-2 pt-2 mr-5 pr-5 text-white '><b>Edu Quiz World</b></h1>
               <div className="flex items-end">
                 <div className="hidden md:block">
-                <div className="ml-10 mb-2 pt-2 flex items-right  space-x-4">
+                <div className="ml-10 mb-5 pt-5 flex items-right  space-x-4">
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/'>Home</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/topics'>Topics</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/statistics'>Statistics</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/blog'>Blog</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/about'>About</Link>
+                  <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/topic/:topicId'>Topic Details</Link>
                 
                 <div className="flex items-center ml-5 pl-5">
                 <div className="flex border ml-5 border-purple-200 rounded">
