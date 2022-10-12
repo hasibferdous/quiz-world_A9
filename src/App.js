@@ -8,6 +8,9 @@ import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
 import TopicDetails from './Components/TopicDetails/TopicDetails';
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -20,11 +23,16 @@ function App() {
       },
       element: <Topics></Topics>
     },
-    {path:'/topic/:topicId', loader:async ({params})=>{return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);},element: <TopicDetails></TopicDetails>},
+
+    {path:'/quiz/:quizId', loader:async ({params})=>{return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`);},element: <TopicDetails></TopicDetails>},
       
-                 //{path: '/topics', element:<Topics></Topics>},
-                 {path: '/statistics', element:<Statistics></Statistics>},
-                 {path: '/blog', element:<Blog></Blog>},
+                 
+    
+                 {path: '/statistics', loader: async () => {
+      return fetch("https://openapi.programming-hero.com/api/quiz");
+    }, element:<Statistics></Statistics>},
+                 
+                {path: '/blog', element:<Blog></Blog>},
                  {path: '/about', element:<About></About>},
                  
                 ],
@@ -38,7 +46,10 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+
+      <ToastContainer></ToastContainer>
     </div>
+    
   );
 }
 

@@ -12,7 +12,7 @@ const Header = () => {
     
         <div>
 
-        <nav className="bg-gray-800 px:h-44 p-11 m-5 rounded-xl font-sans">
+        <nav className="bg-cyan-900 px:h-44 p-11 m-11 rounded-xl font-sans">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex  h-28">
             <img className=' pb-2 w-28 h-28' src={logo} alt="" />
@@ -25,7 +25,7 @@ const Header = () => {
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/statistics'>Statistics</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/blog'>Blog</Link>
                   <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/about'>About</Link>
-                  <Link className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-md font-medium" to='/topic/:topicId'>Topic Details</Link>
+                  
                 
                 <div className="flex items-center ml-5 pl-5">
                 <div className="flex border ml-5 border-purple-200 rounded">
