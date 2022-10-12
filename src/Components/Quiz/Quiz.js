@@ -21,7 +21,7 @@ const Quiz = ({quiz}) => {
         <div className="bg-black text-white p-11 rounded-lg">
         <div>
           <div className="flex justify-between">
-            <p className="text-2xl">Question: {question.slice(3, -4)}</p>
+            <p className="lg:text-2xl">Question: {question.slice(3, -4)}</p>
             <div className="h-8 w-8 bg-gray-600" onClick={() => setOpen(!open)}>
               {open ? <EyeIcon></EyeIcon> : <EyeSlashIcon></EyeSlashIcon>}
             </div>
@@ -42,7 +42,7 @@ const Quiz = ({quiz}) => {
               </label>
             ))}
             {open === true && (
-              <p className="text-3xl pt-5 text-green-600">
+              <p className="lg:text-3xl pt-5 text-green-600">
                 The Correct Answer: {correctAnswer}
               </p>
             )}

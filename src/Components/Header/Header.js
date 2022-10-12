@@ -1,10 +1,8 @@
 import React, { useState }from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../images/edu.png';
-
 import { Transition } from "@headlessui/react";
 
-import './Header.css'
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
@@ -13,7 +11,7 @@ const Header = () => {
         <div>
 
         <nav className="bg-cyan-900 px:h-44 p-11 m-11 rounded-xl font-sans">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 md:px-2 lg:px-8">
             <div className="flex  h-28">
             <img className=' pb-2 w-28 h-28' src={logo} alt="" />
             <h1 className='text-3xl mt-2 pt-2 mr-5 pr-5 text-white '><b>Edu Quiz World</b></h1>
@@ -45,7 +43,7 @@ const Header = () => {
 
 
 
-              <div className="-mr-2 flex md:hidden">
+              <div className="-mr-12 md:mr-16 md:pr-16 flex md:hidden">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   type="button"
@@ -102,8 +100,8 @@ const Header = () => {
             leaveTo="opacity-0 scale-95"
           >
             {(ref) => (
-              <div className="md:hidden  mt-11 mr-11 pr-11" id="mobile-menu">
-                <div ref={ref} className=" bg-black h-full inline-flex -mt-11 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <div className="md:hidden  mt-11 mr-16 pr-12" id="mobile-menu">
+                <div ref={ref} className=" bg-black h-full w-56 mt-11 mr-16 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium" to='/'>Home</Link>
                 <Link className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium" to='/topics'>Topics</Link>
                 <Link className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium" to='/statistics'>Statistics</Link>

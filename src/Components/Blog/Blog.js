@@ -14,8 +14,8 @@ const Blog = () => {
     return (
     <div className='bg-black m-11 p-11 rounded-xl'>
     <Fragment>
-      <Accordion className='bg-gray-300 mb-5 p-2  rounded-xl h-52' open={open === 1}>
-        <AccordionHeader className='text-3xl pt-9 pl-80' onClick={() => handleOpen(1)}>
+      <Accordion className='bg-gray-300 mb-5 p-2  rounded-xl lg:h-52 md:h-72' open={open === 1}>
+        <AccordionHeader className='lg:text-3xl lg:pt-9 lg:pl-80' onClick={() => handleOpen(1)}>
         What is the purpose of react router ?
         </AccordionHeader>
         <AccordionBody>
@@ -26,8 +26,8 @@ const Blog = () => {
         Rendering a nested UI from the route matches</p>
         </AccordionBody>
       </Accordion>
-      <Accordion className='bg-gray-300 mb-5 p-2 rounded-xl h-52' open={open === 2}>
-        <AccordionHeader className='text-3xl pt-9 pl-96 pr-4' onClick={() => handleOpen(2)}>
+      <Accordion className='bg-gray-300 mb-5 p-2 rounded-xl lg:h-52 md:h-72' open={open === 2}>
+        <AccordionHeader className='lg:text-3xl lg:pt-9 lg:pl-96' onClick={() => handleOpen(2)}>
           How does Context api work ?
         </AccordionHeader>
         <AccordionBody>
@@ -39,8 +39,8 @@ const Blog = () => {
             is a component that consumes and uses the state. </p>
         </AccordionBody>
       </Accordion>
-      <Accordion className='bg-gray-300 mb-5 p-2 rounded-xl h-52' open={open === 3}>
-        <AccordionHeader className='text-3xl pt-9 pl-96' onClick={() => handleOpen(3)}>
+      <Accordion className='bg-gray-300 mb-5 p-2 rounded-xl lg:h-52 md:h-72' open={open === 3}>
+        <AccordionHeader className='lg:text-3xl lg:pt-9 lg:pl-96' onClick={() => handleOpen(3)}>
           Explain about React useRef.
         </AccordionHeader>
         <AccordionBody>
