@@ -19,13 +19,13 @@ const Statistics = () => {
             <h1 className="text-5xl w-auto mx-11 p-11 rounded-xl bg-black text-white">
                 Statistics of Quiz Topics
             </h1>
-        <div className="mt-8">
-          <ResponsiveContainer width="80%" height={200}>
-            <BarChart width={150} height={40} data={loadedData}>
+        <div className="m-11 pt-11 pl-32 bg-slate-100 rounded-xl">
+          <ResponsiveContainer width="80%" height={300}>
+            <BarChart width={150} height={90} data={loadedData}>
               <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="total" fill="#8884d8" />
+              <YAxis  />
+              <Tooltip/>
+              <Bar dataKey="total" fill="orange" />
             </BarChart>
           </ResponsiveContainer>
         </div>
